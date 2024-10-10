@@ -1,0 +1,202 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Portada */
+.hero-section {
+    position: relative;
+    background-image: url('portada.jpg'); /* Cambia por la imagen que desees */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.hero-subtitle {
+    color: #ffffff;
+    font-size: 1.5rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+}
+
+/* Barra de Navegación */
+.header {
+    background-color: #2e4053;
+    padding: 2rem 0;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar ul {
+    display: inline-block;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #d1d1d1;
+}
+
+/* Sección del Perfil del Doctor */
+.doctor-profile-section {
+    padding: 4rem 0;
+    background-color: #e8f6f3;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2e4053;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: #2e4053;
+}
+
+.specialty {
+    font-size: 1.2rem;
+    color: #18bc9c;
+}
+
+
+
+/* Selector por ID para la descripción */
+#doctor-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+.book-btn {
+    background-color: #18bc9c;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #14997f;
+}
+
+/* Sección de Comentarios de Pacientes */
+.reviews-section {
+    background-color: #f8f9f9;
+    padding: 3rem 0;
+}
+
+.reviews-section h3 {
+    text-align: center;
+    color: #2e4053;
+    margin-bottom: 2rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.review-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h4 {
+    font-size: 1.1rem;
+    color: #2e4053;
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.review-card small {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
